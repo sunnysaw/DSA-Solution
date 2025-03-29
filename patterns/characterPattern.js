@@ -8,10 +8,10 @@ GHIJ
 function characterPattern(digits) {
   if (digits === 1) return digits;
   let count = 1;
-  let result = "A ";
+  let result = "A";
     while (count <= digits) {
       console.log(result);
-      result += String.fromCharCode(count + 65) + " ";
+      result += String.fromCharCode(count + 65) ;
     count++;
   }
 }

@@ -13,9 +13,9 @@ function halfPyramidPattern(digits) {
   let count = 1;
   let result = "";
   while (count <= digits) {
-    result += count + " ";
+    result += count;
     console.log(result);
     count++;
   }
 }
-halfPyramidPattern(52);
+halfPyramidPattern(5);

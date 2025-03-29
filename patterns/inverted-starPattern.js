@@ -5,15 +5,17 @@ Print the following pattern for the given N number of rows.
 * *
 *
  */
-function invertedStarPattern(digits)
-{
-   for (let index = 1; index <= digits; index++) {
-       let star = "";
-       for (let secondIndex = index; secondIndex <= digits; secondIndex++) {
-           star += '*';
-       }
-    console.log(star);
-    
-   }
+function generateStarPattern(n) {
+  let result = "";
+  for (let index = 1; index <= n; index++) {
+    let star = "";
+    for (let secondIndex = index; secondIndex <= n; secondIndex++) {
+      star += "*";
+    }
+    result += star + "\n"; // Append to result with a newline
+  }
+  return result; // Return the complete pattern
 }
-invertedStarPattern(4);
+
+// Example Usage
+console.log(generateStarPattern(5));
